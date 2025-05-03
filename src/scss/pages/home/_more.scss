@@ -1,0 +1,214 @@
+.productModals {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.325);
+  z-index: 9999;
+  backdrop-filter: blur(2px);
+  font-family: $main-font;
+
+  .closeBtn {
+    position: absolute;
+    left: -20px;
+    z-index: 9999;
+    button {
+      background-color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: none;
+      background-color: #191a1d;
+      border: 1px solid #424242;
+      color: white;
+    }
+  }
+  .modalContent {
+    padding: 20px;
+    background-color: #191a1d;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    .carts {
+      .carts-img {
+        padding-bottom: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .carts-body {
+        padding-bottom: 10px;
+        .title {
+          font-weight: 400;
+          font-family: $main-font;
+          color: #ffff;
+          font-size: 18px;
+        }
+        .price {
+          padding-bottom: 10px;
+          .current {
+            color: #fff;
+          }
+        }
+        .stars {
+          padding-bottom: 10px;
+          i {
+            color: gold;
+          }
+        }
+        .desc {
+          padding-bottom: 10px;
+          color: gray;
+          font-size: 18px;
+        }
+        .addtocart {
+          padding-top: 10px;
+          display: flex;
+          gap: 20px;
+          ul {
+            border-radius: 10px;
+            align-items: center;
+            border: 1px solid gray;
+            display: flex;
+            color: white;
+            height: 60px;
+            justify-content: space-between;
+            width: 90px;
+            padding: 10px;
+
+            li {
+              i {
+                font-size: 18px;
+              }
+              &:hover {
+                color: #b7b6b6;
+                cursor: pointer;
+              }
+            }
+          }
+          button {
+            color: #fff;
+            padding: 20px;
+            width: 200px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: capitalize;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+            border-style: none;
+            background-color: #555;
+            transition: 0.2s ease-in-out;
+            &:hover {
+              background-color: #424242;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.active {
+  display: flex;
+}
+
+.loginModals {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.325);
+  z-index: 9999;
+  backdrop-filter: blur(2px);
+  font-family: $main-font;
+  .signin {
+    padding: 20px;
+    background-color: #191a1d;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+  }
+  .closelogin {
+    position: absolute;
+    left: -20px;
+    z-index: 9999;
+    button {
+      background-color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: none;
+      background-color: #191a1d;
+      border: 1px solid #424242;
+      color: white;
+    }
+  }
+  .head-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    border-bottom: 1px solid #615f5f55;
+    padding-bottom: 10px;
+  }
+  .content {
+    form {
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      input {
+        background-color: #292d38;
+        border: 1px solid #292d38;
+        width: 100%;
+        padding: 10px;
+      }
+    }
+    .remember {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    .submit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      button {
+        height: auto;
+        width: 100%;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        line-height: 1.5;
+        background-color: #555;
+        border: none;
+        color: white;
+        border-radius: 15px;
+        width: 100%;
+      }
+      p {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.activeLogin {
+  display: flex;
+}

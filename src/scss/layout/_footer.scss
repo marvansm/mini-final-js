@@ -1,0 +1,121 @@
+footer {
+  padding: 60px 20px;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #23262f;
+  font-family: $secondary-font;
+
+  .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-right: 1px solid #cccccc52;
+    padding-right: 30px;
+    img {
+      width: 200px;
+      height: auto;
+      object-fit: contain;
+    }
+    p {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 24px;
+      color: #a9abb2;
+    }
+    form {
+      position: relative;
+      input {
+        border-radius: 8px;
+        background: #3f4555;
+        padding: 10px;
+        height: 54px;
+        border-color: #3f4555;
+        width: 100%;
+        border: none;
+        outline: none;
+      }
+      button {
+        border: none;
+        position: absolute;
+        right: 5px;
+        height: 36px;
+        width: 122px;
+        top: 6px;
+        height: 42px;
+        background: #776bf8;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-weight: 700;
+        text-transform: none;
+        font-size: 18px;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: space-evenly;
+    .start {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .title {
+          color: white;
+          font-size: 18px;
+        }
+        li {
+          color: #a9abb2;
+          font-size: 16px;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            color: #9a9ca2;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .mid {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .title {
+          color: white;
+          font-size: 18px;
+        }
+        li {
+          color: #a9abb2;
+          font-size: 16px;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            color: #9a9ca2;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .last {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .title {
+          color: white;
+          font-size: 18px;
+        }
+        li {
+          color: #a9abb2;
+          font-size: 16px;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            color: #9a9ca2;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

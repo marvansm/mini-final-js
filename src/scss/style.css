@@ -174,12 +174,17 @@ header nav .left ul li {
   padding: 10px 0px 10px 0px;
   font-size: 17px;
   font-weight: 600;
+  transition: 0.2s ease-in-out;
 }
 header nav .left ul li img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+header nav .left ul li:hover {
+  color: #828181;
+  cursor: pointer;
 }
 header nav .left span {
   height: 40px;
@@ -210,6 +215,11 @@ header nav .right ul li {
   font-size: 17px;
   font-weight: 600;
   color: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+header nav .right ul li:hover {
+  color: #828181;
+  cursor: pointer;
 }
 header nav .right ul .currency {
   padding: 10px 10px;
@@ -392,6 +402,122 @@ header .services button {
 }
 header .services button i {
   color: #776bf8;
+}
+
+footer {
+  padding: 60px 20px;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #23262f;
+  font-family: "Unbounded", sans-serif;
+}
+footer .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px solid rgba(204, 204, 204, 0.3215686275);
+  padding-right: 30px;
+}
+footer .left img {
+  width: 200px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .left p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #a9abb2;
+}
+footer .left form {
+  position: relative;
+}
+footer .left form input {
+  border-radius: 8px;
+  background: #3f4555;
+  padding: 10px;
+  height: 54px;
+  border-color: #3f4555;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+footer .left form button {
+  border: none;
+  position: absolute;
+  right: 5px;
+  height: 36px;
+  width: 122px;
+  top: 6px;
+  height: 42px;
+  background: #776bf8;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 18px;
+}
+footer .right {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .right .start ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .right .start ul .title {
+  color: white;
+  font-size: 18px;
+}
+footer .right .start ul li {
+  color: #a9abb2;
+  font-size: 16px;
+  transition: 0.2s ease-in-out;
+}
+footer .right .start ul li:hover {
+  color: #9a9ca2;
+  cursor: pointer;
+}
+footer .right .mid ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .right .mid ul .title {
+  color: white;
+  font-size: 18px;
+}
+footer .right .mid ul li {
+  color: #a9abb2;
+  font-size: 16px;
+  transition: 0.2s ease-in-out;
+}
+footer .right .mid ul li:hover {
+  color: #9a9ca2;
+  cursor: pointer;
+}
+footer .right .last ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .right .last ul .title {
+  color: white;
+  font-size: 18px;
+}
+footer .right .last ul li {
+  color: #a9abb2;
+  font-size: 16px;
+  transition: 0.2s ease-in-out;
+}
+footer .right .last ul li:hover {
+  color: #9a9ca2;
+  cursor: pointer;
 }
 
 #discover {
@@ -1017,6 +1143,9 @@ header .services button i {
   padding: 5px 5px 5px 5px;
 }
 
+#blog {
+  margin-bottom: 50px;
+}
 #blog .head-info ul {
   font-family: "Unbounded", sans-serif;
   display: flex;
@@ -1075,4 +1204,213 @@ header .services button i {
   color: #ffffff;
   font-size: 22px;
   font-weight: 600;
+}
+
+.productModals {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.325);
+  z-index: 9999;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  font-family: "Rethink Sans", sans-serif;
+}
+.productModals .closeBtn {
+  position: absolute;
+  left: -20px;
+  z-index: 9999;
+}
+.productModals .closeBtn button {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #191a1d;
+  border: 1px solid #424242;
+  color: white;
+}
+.productModals .modalContent {
+  padding: 20px;
+  background-color: #191a1d;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+.productModals .modalContent .carts .carts-img {
+  padding-bottom: 10px;
+}
+.productModals .modalContent .carts .carts-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.productModals .modalContent .carts .carts-body {
+  padding-bottom: 10px;
+}
+.productModals .modalContent .carts .carts-body .title {
+  font-weight: 400;
+  font-family: "Rethink Sans", sans-serif;
+  color: white;
+  font-size: 18px;
+}
+.productModals .modalContent .carts .carts-body .price {
+  padding-bottom: 10px;
+}
+.productModals .modalContent .carts .carts-body .price .current {
+  color: #fff;
+}
+.productModals .modalContent .carts .carts-body .stars {
+  padding-bottom: 10px;
+}
+.productModals .modalContent .carts .carts-body .stars i {
+  color: gold;
+}
+.productModals .modalContent .carts .carts-body .desc {
+  padding-bottom: 10px;
+  color: gray;
+  font-size: 18px;
+}
+.productModals .modalContent .carts .carts-body .addtocart {
+  padding-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+.productModals .modalContent .carts .carts-body .addtocart ul {
+  border-radius: 10px;
+  align-items: center;
+  border: 1px solid gray;
+  display: flex;
+  color: white;
+  height: 60px;
+  justify-content: space-between;
+  width: 90px;
+  padding: 10px;
+}
+.productModals .modalContent .carts .carts-body .addtocart ul li i {
+  font-size: 18px;
+}
+.productModals .modalContent .carts .carts-body .addtocart ul li:hover {
+  color: #b7b6b6;
+  cursor: pointer;
+}
+.productModals .modalContent .carts .carts-body .addtocart button {
+  color: #fff;
+  padding: 20px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-style: none;
+  background-color: #555;
+  transition: 0.2s ease-in-out;
+}
+.productModals .modalContent .carts .carts-body .addtocart button:hover {
+  background-color: #424242;
+  color: #fff;
+}
+
+.active {
+  display: flex;
+}
+
+.loginModals {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.325);
+  z-index: 9999;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  font-family: "Rethink Sans", sans-serif;
+}
+.loginModals .signin {
+  padding: 20px;
+  background-color: #191a1d;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+.loginModals .closelogin {
+  position: absolute;
+  left: -20px;
+  z-index: 9999;
+}
+.loginModals .closelogin button {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #191a1d;
+  border: 1px solid #424242;
+  color: white;
+}
+.loginModals .head-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  border-bottom: 1px solid rgba(97, 95, 95, 0.3333333333);
+  padding-bottom: 10px;
+}
+.loginModals .content form {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.loginModals .content form input {
+  background-color: #292d38;
+  border: 1px solid #292d38;
+  width: 100%;
+  padding: 10px;
+}
+.loginModals .content .remember ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.loginModals .content .submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.loginModals .content .submit button {
+  height: auto;
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  line-height: 1.5;
+  background-color: #555;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  width: 100%;
+}
+.loginModals .content .submit p {
+  color: #fff;
+}
+
+.activeLogin {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

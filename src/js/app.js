@@ -11,6 +11,12 @@ const trendGameHTml = document.querySelector("#trendGameHTml");
 const joinUS = document.querySelector("#joinUs");
 const discountProduct = document.querySelector("#discount");
 const blogRender = document.querySelector("#blogRender");
+const closeModal = document.querySelector(".closeBtn");
+const modalPage = document.querySelector(".productModals");
+const modalBtn = document.querySelectorAll(".ri-eye-line");
+const loginModals = document.querySelector(".loginModals");
+const login = document.querySelector(".login");
+const closelogin = document.querySelector(".closelogin");
 
 const axiosInstance = axios.create({
   baseURL: "http://localhost:3000/",
@@ -87,6 +93,7 @@ getDataWithApi("products").then((data) => {
                     </div>
                   </div>
                 </div>`;
+
     discountProduct.innerHTML += `  <div class="col">
                 <div class="carts">
                   <div class="carts-img">
@@ -116,6 +123,15 @@ getDataWithApi("products").then((data) => {
                   </div>
                 </div>
               </div>`;
+  });
+  document.querySelectorAll(".ri-eye-line").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      modalPage.classList.toggle("active");
+    });
+  });
+  closeModal.addEventListener("click", () => {
+    modalPage.classList.remove("active");
   });
 });
 
@@ -154,3 +170,20 @@ getDataWithApi("blog").then((data) => {
             </div>`;
   });
 });
+
+login.addEventListener("click", () => {
+  loginModals.classList.add("activeLogin");
+});
+closelogin.addEventListener("click", () => {
+  loginModals.classList.remove("activeLogin");
+});
+
+const email_Input = document.querySelector(".email");
+const password_Input = document.querySelector(".password");
+const loginForm = document.querySelector("#loginForm");
+const submitButton = document.querySelector("#submit");
+
+loginForm.addEventListener('submit',(e)=>{
+  e.preventDefault()
+  
+})
