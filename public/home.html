@@ -24,6 +24,19 @@
     <link rel="stylesheet" href="../src/scss/style.css" />
   </head>
   <body>
+    <div class="basketModals">
+      <div class="basket">
+        <div class="closebasket">
+          <button><i class="ri-close-large-line"></i></button>
+        </div>
+        <div class="head-text">
+          <h2><i class="ri-handbag-line"></i>Shopping cart</h2>
+        </div>
+        <div class="content">
+         
+        </div>
+      </div>
+    </div>
     <div class="loginModals">
       <div class="signin">
         <div class="closelogin">
@@ -34,8 +47,8 @@
         </div>
         <div class="content">
           <form id="loginForm">
-            <label for="email">Username or Email</label>
-            <input type="email" class="email" />
+            <label for="text">Username</label>
+            <input type="text" class="email" />
             <label for="password">Password</label>
             <input type="password" class="password" />
             <div class="remember">
@@ -119,7 +132,10 @@
                 USD $<i class="ri-arrow-down-s-line"></i>
               </li>
               <li class="login"><i class="ri-user-line"></i>Sign in</li>
-              <li><i class="ri-handbag-line"></i></li>
+              <li class="basketIcon">
+                <i class="ri-handbag-line"></i>
+                <p class="count">0</p>
+              </li>
             </ul>
           </div>
         </nav>
@@ -464,6 +480,7 @@
     </footer>
     <script src="../node_modules/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../src/js/app.js"></script>
   </body>
 </html>

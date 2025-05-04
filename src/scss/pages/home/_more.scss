@@ -127,7 +127,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.325);
   z-index: 9999;
-  backdrop-filter: blur(2px);
+
   font-family: $main-font;
   .signin {
     padding: 20px;
@@ -210,5 +210,114 @@
 }
 
 .activeLogin {
+  display: flex;
+}
+
+.basketModals {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.325);
+  z-index: 9999;
+  font-family: $main-font;
+  .basket {
+    padding: 20px;
+    background-color: #191a1d;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+  }
+  .closebasket {
+    position: absolute;
+    left: -20px;
+    z-index: 9999;
+    button {
+      background-color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: none;
+      background-color: #191a1d;
+      border: 1px solid #424242;
+      color: white;
+    }
+  }
+  .head-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    border-bottom: 1px solid #615f5f55;
+    padding-bottom: 10px;
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    
+    .product {
+      padding: 10px;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        background-color: #393939;
+        cursor: pointer;
+      }
+      align-items: center;
+      gap: 10px;
+      display: flex;
+      .product-img {
+        width: 150px;
+        height: 150px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .product-body {
+        .title {
+          color: #fff;
+          font-size: 16px;
+        }
+        .price {
+          padding-top: 10px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          ul {
+            color: #fff;
+            border: 1px solid #403333;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 70px;
+            height: 40px;
+            border-radius: 15px;
+            padding: 5px;
+
+            li {
+              transition: 0.2s ease-in-out;
+              &:hover {
+                color: #555;
+                cursor: pointer;
+              }
+            }
+          }
+          .current {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active {
   display: flex;
 }

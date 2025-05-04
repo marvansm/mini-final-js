@@ -65,6 +65,10 @@ header {
         align-items: center;
         gap: 20px;
         li {
+          display: flex;
+          align-items: center;
+
+          gap: 3px;
           color: #ffffff;
           padding: 10px 0px 10px 0px;
           font-size: 17px;
@@ -74,6 +78,14 @@ header {
           &:hover {
             color: #828181;
             cursor: pointer;
+          }
+          .count {
+            margin: 0;
+            color: white;
+            background-color: #41466b;
+            padding: 5px;
+
+            border-radius: 50%;
           }
         }
         .currency {
