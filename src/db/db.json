@@ -4,71 +4,81 @@
       "id": 101,
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.1-600x600.jpg",
       "title": "Experience Hogwart: in late 1800 and decide wizarding Exclusive world",
-      "oldprice": "99.99",
-      "current": "129.99"
+      "oldprice": "$99.99",
+      "current": "$129.99",
+      "name": "Action"
     },
     {
       "id": 102,
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.6-600x600.jpg",
       "title": "Family Zoo The Story Furry2 Match 3 Madness Rebuild Your Family Zoo",
-      "oldprice": "79.99",
-      "current": "109.99"
+      "oldprice": "$79.99",
+      "current": "$109.99",
+      "name": "Adventure"
     },
     {
       "id": 103,
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.16-600x600.jpg",
       "title": "Ghost Recon Breakpoint. Lorem ipsum dolor sit amet, consectetur",
-      "oldprice": "119.99",
-      "current": "149.99"
+      "oldprice": "$119.99",
+      "current": "$149.99",
+      "name": "Role-Playing"
     },
     {
       "id": 104,
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.10-600x600.jpg",
       "title": "Klondike: Lost Expedition Farm & Explore Wilderness of The Alaska",
-      "oldprice": "65.99",
-      "current": "89.99"
+      "oldprice": "$65.99",
+      "current": "$89.99",
+      "name": "Simulation"
     },
     {
       "id": 105,
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.5-600x600.jpg",
       "title": "Lost Island: Blast Adventure Breezy Match & Build Blast Adventure Series",
-      "oldprice": "49.99",
-      "current": "69.99"
+      "oldprice": "$49.99",
+      "current": "$69.99",
+      "name": "Strategy"
     },
     {
       "id": 106,
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.13-600x600.jpg",
       "title": "Mech Arena PvP Tactical Robot Action Weapons and Mechs Hangar",
-      "oldprice": "159.99",
-      "current": "199.99"
+      "oldprice": "$159.99",
+      "current": "$199.99",
+      "name": "Sports"
     },
     {
       "id": 107,
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.12-600x600.jpg",
       "title": "Merge Gardens Match Merge Gardening Game Mansion’s Grow Evergrowth",
-      "oldprice": "139.99",
-      "current": "179.99"
+      "oldprice": "$139.99",
+      "current": "$179.99",
+      "name": "Racing"
     },
     {
       "id": 108,
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.7-600x600.jpg",
       "title": "Nords: Heroes Of The North Chilling PP Strategy Mayhem Challenging X5",
-      "oldprice": "99.99",
-      "current": "129.99"
+      "oldprice": "$99.99",
+      "current": "$129.99",
+      "name": "Puzzle"
     },
     {
       "id": 109,
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.9-600x600.jpg",
       "title": "Pirates: Tides Of Fortune RTS Adventure on the High Seas Discoveries",
-      "oldprice": "109.99",
-      "current": "139.99"
+      "oldprice": "$109.99",
+      "current": "$139.99",
+      "name": "Fighting"
     },
     {
       "id": 110,
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.3-600x600.jpg",
       "title": "Soldier Inc: Mobile Warfare Rugged MMORTS Challenge Beginngs Pro",
-      "oldprice": "89.99",
-      "current": "119.99"
+      "oldprice": "$89.99",
+      "current": "$119.99",
+      "name": "Survival"
     }
   ],
   "gallery": [

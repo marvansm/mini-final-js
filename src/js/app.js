@@ -3,6 +3,7 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
   loop: true,
 });
 
@@ -17,6 +18,8 @@ const modalBtn = document.querySelectorAll(".ri-eye-line");
 const loginModals = document.querySelector(".loginModals");
 const login = document.querySelector(".login");
 const closelogin = document.querySelector(".closelogin");
+const shopProduct = document.querySelector("#shopProduct");
+const slider = document.querySelector(".swiper-wrapper");
 
 const axiosInstance = axios.create({
   baseURL: "http://localhost:3000/",
@@ -156,6 +159,41 @@ getDataWithApi("products").then((data) => {
                 </div>
               </div>`;
     });
+
+  shopProduct &&
+    data?.forEach((item) => {
+      shopProduct.innerHTML += `<div class="col">
+                  <div class="carts">
+                    <div class="carts-img">
+                      <img
+                        src=${item.image}
+                        alt=""
+                      />
+                      <div class="pos-icon">
+                      <i class="ri-shopping-basket-line" data-product='${JSON.stringify(
+                        item
+                      )}'></i>
+                      <i class="ri-eye-line"></i>
+                      </div>
+                    </div>
+                    <div class="carts-body">
+                      <h2 class="title">
+                       ${item.title}
+                      </h2>
+                      <div class="stars">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                      <div class="price">
+                        <span class="current">${item.current} </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>`;
+    });
   document.querySelectorAll(".ri-shopping-basket-line").forEach((Add) => {
     Add.addEventListener("click", async () => {
       const data = JSON.parse(Add.getAttribute("data-product"));
@@ -193,23 +231,20 @@ getDataWithApi("blog").then((data) => {
   blogRender &&
     data?.forEach((item) => {
       blogRender.innerHTML += ` <div class="col-xl-4">
-              <div class="box">
-                <div class="box-img">
-                  <img
-                    src=${item.img}
-                    alt=""
-                  />
-                  <div class="pos-btn">
-                    <button>${item.category}</button>
-                  </div>
-                </div>
-                <div class="box-body">
-                  <h2>
-                   ${item.title}
-                  </h2>
-                </div>
-              </div>
-            </div>`;
+               <a href="../public/blogg.html"
+  ><div class="box">
+    <div class="box-img">
+      <img src="${item.img}" alt="" />
+      <div class="pos-btn">
+        <button>${item.category}</button>
+      </div>
+    </div>
+    <div class="box-body">
+      <h2>${item.title}</h2>
+    </div>
+  </div></a
+>
+          </div>`;
     });
 });
 
