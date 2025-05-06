@@ -1,15 +1,114 @@
 #detail {
   .carts {
+    font-family: "Rethink Sans", Sans-serif;
     h2 {
-      font-family: "Rethink Sans", Sans-serif;
       font-size: 40px;
       font-weight: 700;
       text-transform: capitalize;
       line-height: 52px;
       color: #ffffff;
     }
-    p {
+    h3 {
       color: #a3a1af;
+      font-weight: 500;
+      line-height: 28px;
+      font-size: 20px;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        color: #d1d0da;
+      }
+    }
+    .price {
+      display: flex;
+      gap: 6px;
+      padding-top: 20px;
+      align-items: baseline;
+      .old {
+        color: #a3a1af;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: line-through;
+      }
+      .current {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+    .status {
+      padding-top: 20px;
+      color: #a3a1af;
+    }
+    .time {
+      display: flex;
+      flex-direction: column;
+      .status {
+        color: #ffcc00;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        i {
+          color: red;
+        }
+      }
+      .counter {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span {
+          background-color: #ffffff;
+          color: black;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px 10px 10px 10px;
+          padding: 10px 10px 10px 10px;
+          border: none;
+        }
+      }
+    }
+
+    .process {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+     
+      .load {
+        display: flex;
+        align-items: center;
+        width: 100%;    
+        .start {
+            width: 40px;
+            height: 8px;
+            background-color: green;
+            border-radius: 10px 0 0 10px;
+          }
+          span {
+            width: 40px;
+            height: 8px;
+            background-color: gray;
+          }
+          .last {
+            width: 80px;
+            height: 8px;
+            background-color: gray;
+            border-radius: 0 10px 10px 0;
+          }
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+       
+        ul {
+          display: flex;
+          align-items: center;
+         
+          color:#ffffff;
+        }
+      }
     }
   }
 }

@@ -95,12 +95,14 @@ getDataWithApi("products").then((data) => {
   trendGameHTml &&
     trendGame.forEach((item) => {
       trendGameHTml.innerHTML += `  <div class="col">
-                    <a href="../public/detail.html"><div class="carts">
+                    <div class="carts">
         <div class="carts-img">
+        <a href="../public/detail.html">
           <img
             src=${item.image}
             alt=""
           />
+          </a>
           <div class="pos-icon">
           <i class="ri-shopping-basket-line" data-product='${JSON.stringify(
             item
@@ -123,7 +125,7 @@ getDataWithApi("products").then((data) => {
             <span class="current">${item.current} </span>
           </div>
         </div>
-      </div></a>
+      </div>
                 </div>`;
 
       discountProduct.innerHTML += `  <div class="col">
@@ -287,10 +289,12 @@ getDataWithApi("blog").then((data) => {
   blogRender &&
     data?.forEach((item) => {
       blogRender.innerHTML += ` <div class="col-xl-4">
-               <a href="../public/blogg.html"
+            <a href="../public/blogg.html"
   ><div class="box">
     <div class="box-img">
+       
       <img src="${item.img}" alt="" />
+    
       <div class="pos-btn">
         <button>${item.category}</button>
       </div>
@@ -298,9 +302,9 @@ getDataWithApi("blog").then((data) => {
     <div class="box-body">
       <h2>${item.title}</h2>
     </div>
-  </div></a
->
-          </div>`;
+      </a>
+  </div>
+       </div>`;
     });
 });
 

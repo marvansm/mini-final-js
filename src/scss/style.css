@@ -1917,14 +1917,111 @@ footer .right .last ul li:hover {
   border-radius: 50%;
 }
 
-#detail .carts h2 {
+#detail .carts {
   font-family: "Rethink Sans", Sans-serif;
+}
+#detail .carts h2 {
   font-size: 40px;
   font-weight: 700;
   text-transform: capitalize;
   line-height: 52px;
   color: #ffffff;
 }
-#detail .carts p {
+#detail .carts h3 {
   color: #a3a1af;
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 20px;
+  transition: 0.2s ease-in-out;
+}
+#detail .carts h3:hover {
+  color: #d1d0da;
+}
+#detail .carts .price {
+  display: flex;
+  gap: 6px;
+  padding-top: 20px;
+  align-items: baseline;
+}
+#detail .carts .price .old {
+  color: #a3a1af;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: line-through;
+}
+#detail .carts .price .current {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+}
+#detail .carts .status {
+  padding-top: 20px;
+  color: #a3a1af;
+}
+#detail .carts .time {
+  display: flex;
+  flex-direction: column;
+}
+#detail .carts .time .status {
+  color: #ffcc00;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#detail .carts .time .status i {
+  color: red;
+}
+#detail .carts .time .counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#detail .carts .time .counter span {
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  border: none;
+}
+#detail .carts .process {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#detail .carts .process .load {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+#detail .carts .process .load .start {
+  width: 40px;
+  height: 8px;
+  background-color: green;
+  border-radius: 10px 0 0 10px;
+}
+#detail .carts .process .load span {
+  width: 40px;
+  height: 8px;
+  background-color: gray;
+}
+#detail .carts .process .load .last {
+  width: 80px;
+  height: 8px;
+  background-color: gray;
+  border-radius: 0 10px 10px 0;
+}
+#detail .carts .process .info {
+  display: flex;
+  flex-direction: column;
+}
+#detail .carts .process .info ul {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
