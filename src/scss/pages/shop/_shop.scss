@@ -79,6 +79,65 @@
       }
     }
   }
+  .btns {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+    p {
+      color: gray;
+      font-family: "Rethink Sans", Sans-serif;
+      font-size: 18px;
+    }
+    .load {
+      background-color: #776bf8;
+      font-family: "Rethink Sans", Sans-serif;
+      border: none;
+      font-size: 17px;
+      font-weight: 600;
+      fill: #ffffff;
+      color: #ffffff;
+      border-radius: 8px 8px 8px 8px;
+      padding: 12px 24px;
+      transition: 0.2s ease-in-out;
+      text-align: center;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #776bf8;
+      }
+    }
+  }
+  .catergory {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h2 {
+      font-family: "Rethink Sans", Sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: #ffffff;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      li {
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+        transition: 0.2s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          color: #bdbcbc;
+        }
+      }
+    }
+  }
 }
 .header-text {
   padding-top: 50px;
@@ -91,18 +150,23 @@
     margin-bottom: 15px;
   }
 }
-.box {
-  width: 100%;
+
+.shop-box {
+  display: flex;
+  flex-direction: column;
+
+  width: 110px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  gap: 10px;
   height: 100%;
-  overflow: hidden;
-  .content {
-    display: flex;
-    flex-direction: column;
-    color: #ffffff;
-    width: 90px;
-    height: 90px;
+  .shop-img {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
   }
 }
-
-

@@ -12,14 +12,13 @@ const trendGameHTml = document.querySelector("#trendGameHTml");
 const joinUS = document.querySelector("#joinUs");
 const discountProduct = document.querySelector("#discount");
 const blogRender = document.querySelector("#blogRender");
-const closeModal = document.querySelector(".closeBtn");
 const modalPage = document.querySelector(".productModals");
 const modalBtn = document.querySelectorAll(".ri-eye-line");
 const loginModals = document.querySelector(".loginModals");
 const login = document.querySelector(".login");
 const closelogin = document.querySelector(".closelogin");
 const shopProduct = document.querySelector("#shopProduct");
-const slider = document.querySelector(".swiper-wrapper");
+const shopSlide = document.querySelector("#shop-slide");
 
 const axiosInstance = axios.create({
   baseURL: "http://localhost:3000/",
@@ -106,7 +105,9 @@ getDataWithApi("products").then((data) => {
                       <i class="ri-shopping-basket-line" data-product='${JSON.stringify(
                         item
                       )}'></i>
-                      <i class="ri-eye-line"></i>
+                      <i class="ri-eye-line" data-product='${JSON.stringify(
+                        item
+                      )}'></i>
                       </div>
                     </div>
                     <div class="carts-body">
@@ -138,7 +139,9 @@ getDataWithApi("products").then((data) => {
                     <i class="ri-shopping-basket-line" data-product='${JSON.stringify(
                       item
                     )}'></i>
-                    <i class="ri-eye-line" ></i>
+                    <i class="ri-eye-line" data-product='${JSON.stringify(
+                      item
+                    )}' ></i>
                     </div>
                   </div>
                   <div class="carts-body">
@@ -159,6 +162,17 @@ getDataWithApi("products").then((data) => {
                 </div>
               </div>`;
     });
+  const category = data.slice(0, 6);
+  category.forEach((item) => {
+    shopSlide.innerHTML += `  <div class="col">
+            <div class="shop-box">
+              <div class="shop-img">
+                <img src=${item.image} alt="" />
+              </div>
+              <h2>${item.name}</h2>
+            </div>
+          </div>`;
+  });
 
   shopProduct &&
     data?.forEach((item) => {
@@ -173,7 +187,9 @@ getDataWithApi("products").then((data) => {
                       <i class="ri-shopping-basket-line" data-product='${JSON.stringify(
                         item
                       )}'></i>
-                      <i class="ri-eye-line"></i>
+                      <i class="ri-eye-line" data-product='${JSON.stringify(
+                        item
+                      )}'></i>
                       </div>
                     </div>
                     <div class="carts-body">
@@ -192,8 +208,59 @@ getDataWithApi("products").then((data) => {
                       </div>
                     </div>
                   </div>
+                  
                 </div>`;
     });
+  document.querySelectorAll(".ri-eye-line").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const data = JSON.parse(btn.getAttribute("data-product"));
+      modalPage.innerHTML = ` <div class="modalContent">
+        <div class="closeBtn">
+          <button><i class="ri-close-large-line"></i></button>
+        </div>
+        <div class="carts">
+          <div class="carts-img">
+            <img src=${data.image} alt="" />
+          </div>
+          <div class="carts-body">
+            <h2 class="title">
+             ${data.title}
+            </h2>
+            <div class="price">
+              <span class="current">${data.current}</span>
+            </div>
+            <div class="stars">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+            </div>
+            <p class="desc">
+              Contrary to popular beliefs has roots in a piece of classical
+              literature from 45 BC, making it over 2000 years old. Richard
+              McClintock an professors at hampden-sydney colleges in virginia,
+              looked up once of the more obscure consectetur from an passages
+              and going through the cites of the words in classical literature
+              discovered undoubtable source book treatise.
+            </p>
+            <div class="addtocart">
+              <ul>
+                <li><i class="ri-subtract-line"></i></li>
+                <li>0</li>
+                <li><i class="ri-add-line"></i></li>
+              </ul>
+              <button><i class="ri-shopping-bag-line"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>`;
+      modalPage.classList.add("active");
+      document.querySelector(".closeBtn").addEventListener("click", () => {
+        modalPage.classList.remove("active");
+      });
+    });
+  });
   document.querySelectorAll(".ri-shopping-basket-line").forEach((Add) => {
     Add.addEventListener("click", async () => {
       const data = JSON.parse(Add.getAttribute("data-product"));
@@ -201,16 +268,6 @@ getDataWithApi("products").then((data) => {
       renderBasket();
     });
   });
-  document.querySelectorAll(".ri-eye-line").forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      modalPage.classList.toggle("active");
-    });
-  });
-  closeModal &&
-    closeModal.addEventListener("click", () => {
-      modalPage.classList.remove("active");
-    });
 });
 
 getDataWithApi("gallery").then((data) => {
@@ -307,6 +364,7 @@ closebasket.addEventListener("click", () => {
 
 const renderBasket = () => {
   const basketItem = getLocalStorageData();
+
   basketProduct.innerHTML = "";
 
   basketItem.forEach((item) => {
@@ -319,7 +377,7 @@ const renderBasket = () => {
               <div class="price">
                 <ul>
                   <li><i class="ri-subtract-line"></i></li>
-                  <li>${item.quantity}</li>
+                  <li class="zero">${item.quantity}</li>
                   <li><i class="ri-add-line"></i></li>
                 </ul>
                 <span class="current">$${item.current}</span>

@@ -10,7 +10,7 @@
 
   .closeBtn {
     position: absolute;
-    left: -20px;
+    left: 0px;
     z-index: 9999;
     button {
       background-color: white;
@@ -33,6 +33,7 @@
     position: absolute;
     right: 0;
     height: 100%;
+    overflow-y: scroll;
     .carts {
       .carts-img {
         padding-bottom: 10px;
@@ -260,7 +261,7 @@
     width: 100%;
     height: 100%;
     overflow-y: scroll;
-    
+
     .product {
       padding: 10px;
       transition: 0.2s ease-in-out;

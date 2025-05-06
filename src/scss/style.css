@@ -1248,7 +1248,7 @@ footer .right .last ul li:hover {
 }
 .productModals .closeBtn {
   position: absolute;
-  left: -20px;
+  left: 0px;
   z-index: 9999;
 }
 .productModals .closeBtn button {
@@ -1271,6 +1271,7 @@ footer .right .last ul li:hover {
   position: absolute;
   right: 0;
   height: 100%;
+  overflow-y: scroll;
 }
 .productModals .modalContent .carts .carts-img {
   padding-bottom: 10px;
@@ -1724,6 +1725,64 @@ footer .right .last ul li:hover {
   font-weight: 600;
   color: #ffffff;
 }
+#shop .btns {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 30px;
+}
+#shop .btns p {
+  color: gray;
+  font-family: "Rethink Sans", Sans-serif;
+  font-size: 18px;
+}
+#shop .btns .load {
+  background-color: #776bf8;
+  font-family: "Rethink Sans", Sans-serif;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  fill: #ffffff;
+  color: #ffffff;
+  border-radius: 8px 8px 8px 8px;
+  padding: 12px 24px;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+}
+#shop .btns .load:hover {
+  background-color: #ffffff;
+  color: #776bf8;
+}
+#shop .catergory {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#shop .catergory h2 {
+  font-family: "Rethink Sans", Sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+#shop .catergory ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#shop .catergory ul li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+#shop .catergory ul li:hover {
+  cursor: pointer;
+  color: #bdbcbc;
+}
 
 .header-text {
   padding-top: 50px;
@@ -1737,16 +1796,23 @@ footer .right .last ul li:hover {
   margin-bottom: 15px;
 }
 
-.box {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.box .content {
+.shop-box {
   display: flex;
   flex-direction: column;
+  width: 110px;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
-  width: 90px;
-  height: 90px;
+  gap: 10px;
+  height: 100%;
+}
+.shop-box .shop-img {
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
