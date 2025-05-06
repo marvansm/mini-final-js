@@ -95,76 +95,76 @@ getDataWithApi("products").then((data) => {
   trendGameHTml &&
     trendGame.forEach((item) => {
       trendGameHTml.innerHTML += `  <div class="col">
-                  <div class="carts">
-                    <div class="carts-img">
-                      <img
-                        src=${item.image}
-                        alt=""
-                      />
-                      <div class="pos-icon">
-                      <i class="ri-shopping-basket-line" data-product='${JSON.stringify(
-                        item
-                      )}'></i>
-                      <i class="ri-eye-line" data-product='${JSON.stringify(
-                        item
-                      )}'></i>
-                      </div>
-                    </div>
-                    <div class="carts-body">
-                      <h2 class="title">
-                       ${item.title}
-                      </h2>
-                      <div class="stars">
-                        <i class="ri-star-s-fill"></i>
-                        <i class="ri-star-s-fill"></i>
-                        <i class="ri-star-s-fill"></i>
-                        <i class="ri-star-s-fill"></i>
-                        <i class="ri-star-s-fill"></i>
-                      </div>
-                      <div class="price">
-                        <span class="current">${item.current} </span>
-                      </div>
-                    </div>
-                  </div>
+                    <a href="../public/detail.html"><div class="carts">
+        <div class="carts-img">
+          <img
+            src=${item.image}
+            alt=""
+          />
+          <div class="pos-icon">
+          <i class="ri-shopping-basket-line" data-product='${JSON.stringify(
+            item
+          )}'></i>
+          <i class="ri-eye-line" data-product='${JSON.stringify(item)}'></i>
+          </div>
+        </div>
+        <div class="carts-body">
+          <h2 class="title">
+           ${item.title}
+          </h2>
+          <div class="stars">
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+          </div>
+          <div class="price">
+            <span class="current">${item.current} </span>
+          </div>
+        </div>
+      </div></a>
                 </div>`;
 
       discountProduct.innerHTML += `  <div class="col">
-                <div class="carts">
-                  <div class="carts-img">
-                    <img
-                      src=${item.image}
-                      alt=""
-                    />
-                    <div class="pos-icon">
-                    <i class="ri-shopping-basket-line" data-product='${JSON.stringify(
-                      item
-                    )}'></i>
-                    <i class="ri-eye-line" data-product='${JSON.stringify(
-                      item
-                    )}' ></i>
-                    </div>
-                  </div>
-                  <div class="carts-body">
-                    <h2 class="title">
-                     ${item.title}
-                    </h2>
-                    <div class="stars">
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                    </div>
-                    <div class="price">
-                      <span class="current">${item.current} </span>
-                    </div>
-                  </div>
-                </div>
+               <div class="carts">
+      <div class="carts-img">
+                 <a href="../public/detail.html">
+
+        <img
+          src=${item.image}
+          alt=""
+        />
+        </a>
+        <div class="pos-icon">
+        <i class="ri-shopping-basket-line" data-product='${JSON.stringify(
+          item
+        )}'></i>
+        <i class="ri-eye-line" data-product='${JSON.stringify(item)}' ></i>
+        </div>
+      </div>
+      <div class="carts-body">
+        <h2 class="title">
+         ${item.title}
+        </h2>
+        <div class="stars">
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+        </div>
+        <div class="price">
+          <span class="current">${item.current} </span>
+        </div>
+      </div>
+    </div>
               </div>`;
     });
   const category = data.slice(0, 6);
-  category.forEach((item) => {
-    shopSlide.innerHTML += `  <div class="col">
+  shopSlide &&
+    category.forEach((item) => {
+      shopSlide.innerHTML += `  <div class="col">
             <div class="shop-box">
               <div class="shop-img">
                 <img src=${item.image} alt="" />
@@ -172,44 +172,43 @@ getDataWithApi("products").then((data) => {
               <h2>${item.name}</h2>
             </div>
           </div>`;
-  });
+    });
 
   shopProduct &&
     data?.forEach((item) => {
       shopProduct.innerHTML += `<div class="col">
-                  <div class="carts">
-                    <div class="carts-img">
-                      <img
-                        src=${item.image}
-                        alt=""
-                      />
-                      <div class="pos-icon">
-                      <i class="ri-shopping-basket-line" data-product='${JSON.stringify(
-                        item
-                      )}'></i>
-                      <i class="ri-eye-line" data-product='${JSON.stringify(
-                        item
-                      )}'></i>
-                      </div>
-                    </div>
-                    <div class="carts-body">
-                      <h2 class="title">
-                       ${item.title}
-                      </h2>
-                      <div class="stars">
-                        <i class="ri-star-s-fill"></i>
-                        <i class="ri-star-s-fill"></i>
-                        <i class="ri-star-s-fill"></i>
-                        <i class="ri-star-s-fill"></i>
-                        <i class="ri-star-s-fill"></i>
-                      </div>
-                      <div class="price">
-                        <span class="current">${item.current} </span>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>`;
+                 <div class="carts">
+    <div class="carts-img">
+      <a href="../public/detail.html">  
+      <img
+        src=${item.image}
+        alt=""
+      />
+      </a>
+      <div class="pos-icon">
+      <i class="ri-shopping-basket-line" data-product='${JSON.stringify(
+        item
+      )}'></i>
+      <i class="ri-eye-line" data-product='${JSON.stringify(item)}'></i>
+      </div>
+    </div>
+    <div class="carts-body">
+      <h2 class="title">
+       ${item.title}
+      </h2>
+      <div class="stars">
+        <i class="ri-star-s-fill"></i>
+        <i class="ri-star-s-fill"></i>
+        <i class="ri-star-s-fill"></i>
+        <i class="ri-star-s-fill"></i>
+        <i class="ri-star-s-fill"></i>
+      </div>
+      <div class="price">
+        <span class="current">${item.current} </span>
+      </div>
+    </div>
+  </div>        
+     </div>`;
     });
   document.querySelectorAll(".ri-eye-line").forEach((btn) => {
     btn.addEventListener("click", () => {

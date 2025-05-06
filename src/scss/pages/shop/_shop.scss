@@ -7,20 +7,24 @@
     padding: 0px 0px 10px 0px;
     width: 100%;
     height: 100%;
+
     .carts-img {
       position: relative;
       width: 100%;
       height: 300px;
+
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
+
       &:hover {
         .pos-icon {
           opacity: 1;
         }
       }
+
       .pos-icon {
         opacity: 0;
         display: flex;
@@ -32,6 +36,7 @@
         right: 50%;
         gap: 7px;
         transition: 0.3s ease-in-out;
+
         i {
           display: flex;
           align-items: center;
@@ -45,6 +50,7 @@
           width: 30px;
           height: 30px;
           transition: 0.2s ease-in-out;
+
           &:hover {
             background-color: #bdbcbc;
             cursor: pointer;
@@ -52,6 +58,7 @@
         }
       }
     }
+
     .carts-body {
       display: flex;
       flex-direction: column;
@@ -59,17 +66,20 @@
       padding-top: 8px;
       padding-right: 20px;
       padding-left: 20px;
+
       .title {
         color: #ffffff;
         font-weight: 600;
         line-height: 20px;
         font-size: 15px;
       }
+
       .stars {
         i {
           color: gold;
         }
       }
+
       .price {
         .current {
           font-size: 19px;
@@ -79,6 +89,7 @@
       }
     }
   }
+
   .btns {
     display: flex;
     justify-content: center;
@@ -87,11 +98,13 @@
     align-items: center;
     width: 100%;
     padding-bottom: 30px;
+
     p {
       color: gray;
       font-family: "Rethink Sans", Sans-serif;
       font-size: 18px;
     }
+
     .load {
       background-color: #776bf8;
       font-family: "Rethink Sans", Sans-serif;
@@ -111,10 +124,14 @@
       }
     }
   }
+
   .catergory {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.233);
+
     h2 {
       font-family: "Rethink Sans", Sans-serif;
       font-size: 19px;
@@ -122,15 +139,132 @@
       text-transform: capitalize;
       color: #ffffff;
     }
+
     ul {
       display: flex;
       align-items: center;
       gap: 8px;
+
       li {
         font-size: 16px;
         font-weight: 500;
         color: #ffffff;
         transition: 0.2s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          color: #bdbcbc;
+        }
+      }
+    }
+  }
+
+  .filter {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.233);
+
+    h2 {
+      font-family: "Rethink Sans", Sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: #ffff;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      li {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        transition: 0.2s ease-in-out;
+
+        i {
+          color: gold;
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: #bdbcbc;
+        }
+      }
+    }
+  }
+  .Platform {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.233);
+
+    h2 {
+      font-family: "Rethink Sans", Sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: #ffff;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      li {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        transition: 0.2s ease-in-out;
+
+        i {
+          color: gold;
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: #bdbcbc;
+        }
+      }
+    }
+  }
+  .Availability {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+
+    h2 {
+      font-family: "Rethink Sans", Sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: #ffff;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      li {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        transition: 0.2s ease-in-out;
+
+        i {
+          color: gold;
+        }
+
         &:hover {
           cursor: pointer;
           color: #bdbcbc;
@@ -139,8 +273,10 @@
     }
   }
 }
+
 .header-text {
   padding-top: 50px;
+
   h2 {
     text-align: center;
     color: #ffffff;
@@ -161,6 +297,7 @@
   color: #ffffff;
   gap: 10px;
   height: 100%;
+
   .shop-img {
     width: 140px;
     height: 140px;

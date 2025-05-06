@@ -1760,6 +1760,8 @@ footer .right .last ul li:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.233);
 }
 #shop .catergory h2 {
   font-family: "Rethink Sans", Sans-serif;
@@ -1780,6 +1782,104 @@ footer .right .last ul li:hover {
   transition: 0.2s ease-in-out;
 }
 #shop .catergory ul li:hover {
+  cursor: pointer;
+  color: #bdbcbc;
+}
+#shop .filter {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.233);
+}
+#shop .filter h2 {
+  font-family: "Rethink Sans", Sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: white;
+}
+#shop .filter ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#shop .filter ul li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+#shop .filter ul li i {
+  color: gold;
+}
+#shop .filter ul li:hover {
+  cursor: pointer;
+  color: #bdbcbc;
+}
+#shop .Platform {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.233);
+}
+#shop .Platform h2 {
+  font-family: "Rethink Sans", Sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: white;
+}
+#shop .Platform ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#shop .Platform ul li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+#shop .Platform ul li i {
+  color: gold;
+}
+#shop .Platform ul li:hover {
+  cursor: pointer;
+  color: #bdbcbc;
+}
+#shop .Availability {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+#shop .Availability h2 {
+  font-family: "Rethink Sans", Sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: white;
+}
+#shop .Availability ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#shop .Availability ul li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+#shop .Availability ul li i {
+  color: gold;
+}
+#shop .Availability ul li:hover {
   cursor: pointer;
   color: #bdbcbc;
 }
@@ -1815,4 +1915,16 @@ footer .right .last ul li:hover {
   -o-object-position: center;
      object-position: center;
   border-radius: 50%;
+}
+
+#detail .carts h2 {
+  font-family: "Rethink Sans", Sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 52px;
+  color: #ffffff;
+}
+#detail .carts p {
+  color: #a3a1af;
 }/*# sourceMappingURL=style.css.map */
