@@ -1,118 +1,136 @@
 {
   "products": [
     {
-      "id": 101,
+      "id": "101",
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.1-600x600.jpg",
       "title": "Experience Hogwart: in late 1800 and decide wizarding Exclusive world",
       "oldprice": "$99.99",
       "current": "$129.99",
-      "name": "Action"
+      "name": "Action",
+      "description": "Embark on an adventure through Alaska’s wilderness, uncovering the secrets of a lost civilization. Face challenges like extreme cold, treacherous wildlife, and difficult terrain while trying to survive. You'll need to gather resources, build shelters, and find food as you explore the vast, icy wilderness. Every decision matters as you navigate through this dangerous environment. Survival and discovery are the keys to success."
     },
     {
-      "id": 102,
+      "id": "102",
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.6-600x600.jpg",
       "title": "Family Zoo The Story Furry2 Match 3 Madness Rebuild Your Family Zoo",
       "oldprice": "$79.99",
       "current": "$109.99",
-      "name": "Adventure"
+      "name": "Adventure",
+      "description": " Venture deep into Alaska’s uncharted territories, where the cold and harsh conditions make survival difficult. Uncover ancient ruins and hidden treasures while battling snowstorms, dangerous wildlife, and freezing temperatures. Your survival depends on your ability to gather food, craft tools, and make strategic decisions. Explore long-forgotten lands, solve ancient mysteries, and discover the truth behind the expedition that vanished years ago"
     },
     {
-      "id": 103,
+      "id": "103",
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.16-600x600.jpg",
       "title": "Ghost Recon Breakpoint. Lorem ipsum dolor sit amet, consectetur",
       "oldprice": "$119.99",
       "current": "$149.99",
-      "name": "Role-Playing"
+      "name": "Role-Playing",
+      "description": " Face the ultimate test of survival in a land of ice and snow. Trek through harsh Arctic landscapes filled with dangers such as wild animals and bitter cold. As you explore, uncover clues to an ancient mystery and fight for your life against the unforgiving elements. Gather resources, construct shelters, and strategize your survival. Only the strongest and most resourceful can make it out alive."
     },
     {
-      "id": 104,
+      "id": "104",
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.10-600x600.jpg",
       "title": "Klondike: Lost Expedition Farm & Explore Wilderness of The Alaska",
       "oldprice": "$65.99",
       "current": "$89.99",
-      "name": "Simulation"
+      "name": "Simulation",
+      "description": "Take on the challenge of surviving in Alaska’s unforgiving wilderness. Confront freezing temperatures, snowstorms, and dangerous wildlife as you explore this remote and isolated environment. Your goal is to stay alive by finding food, building shelter, and uncovering the mysteries of the wild. This survival game pushes your resourcefulness and resilience to the limit as you attempt to navigate the dangerous frozen landscape."
     },
     {
-      "id": 105,
+      "id": "105",
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.5-600x600.jpg",
       "title": "Lost Island: Blast Adventure Breezy Match & Build Blast Adventure Series",
       "oldprice": "$49.99",
       "current": "$69.99",
-      "name": "Strategy"
+      "name": "Strategy",
+      "description": "Step into the wild, frozen terrain of Alaska, where survival is a constant battle against the elements. Fight against freezing temperatures, snowstorms, and dangerous animals while searching for hidden treasures and long-lost secrets. Build shelters, gather food, and face unpredictable dangers as you explore the icy wilderness. The harsh environment will test your endurance and survival skills to their limits. Will you make it out alive?"
     },
     {
-      "id": 106,
+      "id": "106",
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.13-600x600.jpg",
       "title": "Mech Arena PvP Tactical Robot Action Weapons and Mechs Hangar",
       "oldprice": "$159.99",
       "current": "$199.99",
-      "name": "Sports"
+      "name": "Sports",
+      "description": "Set off on an epic journey into the heart of Alaska's most treacherous landscapes. Navigate through thick snow and icy waters as you seek out lost artifacts and treasure. Fight against the biting cold, wild predators, and perilous weather as you race against time. Every decision you make will impact your survival, and only those who adapt will survive the harsh conditions of this frozen world."
     },
     {
-      "id": 107,
+      "id": "107",
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.12-600x600.jpg",
       "title": "Merge Gardens Match Merge Gardening Game Mansion’s Grow Evergrowth",
       "oldprice": "$139.99",
       "current": "$179.99",
-      "name": "Racing"
+      "name": "Racing",
+      "description": " Embark on a daring journey to the remote, frozen landscapes of Alaska. Your expedition takes you through rugged terrain, dangerous snowstorms, and wild animals. You’ll need to gather resources, build shelters, and outwit the elements if you hope to survive. Uncover the hidden secrets of ancient ruins while trying to stay alive. It’s a race against time in the harshest environment known to man."
     },
     {
-      "id": 108,
+      "id": "108",
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.7-600x600.jpg",
       "title": "Nords: Heroes Of The North Chilling PP Strategy Mayhem Challenging X5",
       "oldprice": "$99.99",
       "current": "$129.99",
-      "name": "Puzzle"
+      "name": "Puzzle",
+      "description": "Survive the brutal wilderness of Alaska, where every decision counts. Faced with extreme weather, wild animals, and scarce resources, you’ll need to use your survival skills to build shelter, hunt for food, and keep warm. As you explore, uncover the mysteries of this untamed land and face dangers at every turn. It’s a world where only the strongest and smartest can thrive in the harshest conditions."
     },
     {
-      "id": 109,
+      "id": "109",
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.9-600x600.jpg",
       "title": "Pirates: Tides Of Fortune RTS Adventure on the High Seas Discoveries",
       "oldprice": "$109.99",
       "current": "$139.99",
-      "name": "Fighting"
+      "name": "Fighting",
+      "description": " Venture deep into Alaska’s uncharted territories, where the cold and harsh conditions make survival difficult. Uncover ancient ruins and hidden treasures while battling snowstorms, dangerous wildlife, and freezing temperatures. Your survival depends on your ability to gather food, craft tools, and make strategic decisions. Explore long-forgotten lands, solve ancient mysteries, and discover the truth behind the expedition that vanished years ago"
     },
     {
-      "id": 110,
+      "id": "110",
       "image": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/2024/07/1.3-600x600.jpg",
       "title": "Soldier Inc: Mobile Warfare Rugged MMORTS Challenge Beginngs Pro",
       "oldprice": "$89.99",
       "current": "$119.99",
-      "name": "Survival"
+      "name": "Survival",
+      "description": " Embark on a daring journey to the remote, frozen landscapes of Alaska. Your expedition takes you through rugged terrain, dangerous snowstorms, and wild animals. You’ll need to gather resources, build shelters, and outwit the elements if you hope to survive. Uncover the hidden secrets of ancient ruins while trying to stay alive. It’s a race against time in the harshest environment known to man."
     }
   ],
   "gallery": [
     {
-      "image": "https://cdn.mos.cms.futurecdn.net/qvWRYXQguGXtwW5tUR6Rw9-1200-80.png"
+      "image": "https://cdn.mos.cms.futurecdn.net/qvWRYXQguGXtwW5tUR6Rw9-1200-80.png",
+      "id": "5133"
     },
     {
-      "image": "https://images.pexels.com/photos/7862493/pexels-photo-7862493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      "image": "https://images.pexels.com/photos/7862493/pexels-photo-7862493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "id": "edfe"
     },
     {
-      "image": "https://media.assettype.com/afkgaming%2F2022-07%2Fd985777d-b204-4511-a778-a9806a83d8af%2FCover_Image___S1mple_Not_Considering_Taking_A_Break_From_Competitive_CSGO_Anymore.jpg?auto=format%2Ccompress&dpr=1.0&w=1200"
+      "image": "https://media.assettype.com/afkgaming%2F2022-07%2Fd985777d-b204-4511-a778-a9806a83d8af%2FCover_Image___S1mple_Not_Considering_Taking_A_Break_From_Competitive_CSGO_Anymore.jpg?auto=format%2Ccompress&dpr=1.0&w=1200",
+      "id": "ef70"
     },
     {
-      "image": "https://www.esports.net/wp-content/uploads/2023/05/astralis-berlin-2019-1.webp"
+      "image": "https://www.esports.net/wp-content/uploads/2023/05/astralis-berlin-2019-1.webp",
+      "id": "235e"
     },
     {
-      "image": "https://www.esports.net/wp-content/uploads/2021/08/CSGO-Major-Winners.jpg"
+      "image": "https://www.esports.net/wp-content/uploads/2021/08/CSGO-Major-Winners.jpg",
+      "id": "5b82"
     }
   ],
   "blog": [
     {
       "img": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/elementor/thumbs/Image-qs9pegp0vnjf60kw3k4wk6bxtqjtyfp8p6m7wbgmx8.jpeg",
       "title": "Perfecting Souls-Like Games: The Rise of a WinningFormula Gaming",
-      "category": "Playstation"
+      "category": "Playstation",
+      "id": "280a"
     },
     {
       "img": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/elementor/thumbs/Image3-qs9pehmv2hkphmjiy2jj4o3ef4f764sz1b9pdlf8r0.jpeg",
       "title": "Soldier Inc: Mobile Warfare Rugged MMORTS Challenge Beginngs Pro",
-      "category": "Playstation"
+      "category": "Playstation",
+      "id": "e062"
     },
     {
       "img": "https://xstore.b-cdn.net/elementor3/games-dark/wp-content/uploads/sites/6/elementor/thumbs/Image1-qs9pehmv2hkphmjiy2jj4o3ef4f764sz1b9pdlf8r0.jpeg",
       "title": "Lost Island: Blast Adventure Breezy Match & Build Blast Adventure Series",
-      "category": "Nintendo"
+      "category": "Nintendo",
+      "id": "80c5"
     }
   ]
 }

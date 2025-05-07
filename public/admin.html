@@ -1,4 +1,4 @@
-n<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -24,23 +24,27 @@ n<!DOCTYPE html>
     <link rel="stylesheet" href="../src/scss/style.css" />
   </head>
   <body>
+    <a href="../public/home.html">
+      <i class="ri-home-4-line"></i>
+    </a>
     <div class="admin-panel">
       <h1>Add Product Panel</h1>
 
       <form id="product-form" class="product-form">
-        <input type="text" id="name" placeholder="Product Name" required />
+        <input type="text" id="adminName" placeholder="Product Name" required />
         <input
           type="text"
-          id="description"
+          id="AdminDesc"
           placeholder="description"
           required
         />
-        <input type="number" id="price" placeholder="Price" required />
-        <input type="url" id="image" placeholder="Image Url" required />
-        <button id="submit" type="submit">Add</button>
+        <input type="number" id="Adminprice" placeholder="Price" required />
+        <input type="url" id="Adminimage" placeholder="Image Url" required />
+        <button id="Adminsubmit" type="submit">Add</button>
       </form>
 
-      <div id="product-list" class="product-list">
+      <div class="container">
+        <div class="row row-cols-xl-1" id="product-list"></div>
       </div>
     </div>
 
